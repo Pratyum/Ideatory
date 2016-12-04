@@ -67,7 +67,7 @@ p {
     /*margin: 1.1em auto;*/
     /*text-align: center;*/
     text-shadow: 0 0 2px rgba(247, 209, 205, 0.9);
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 ::-webkit-input-placeholder {
