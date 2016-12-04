@@ -11,7 +11,9 @@ html, body {
     background: -o-linear-gradient(top,  #91B7C7 0%,#FEFCFD 100%);
     background: -ms-linear-gradient(top,  #91B7C7 0%,#FEFCFD 100%);
     background: linear-gradient(top,  #91B7C7 0%,#FEFCFD 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91B7C7', endColorstr='#FEFCFD',GradientType=0 );    
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91B7C7', endColorstr='#FEFCFD',GradientType=0 ); 
+    background-attachment: fixed;
+
 }
      
 }
@@ -59,12 +61,13 @@ h1 {
  
 p {
     width: 80%;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 1.3em;
     color: #000;
     /*margin: 1.1em auto;*/
     /*text-align: center;*/
     text-shadow: 0 0 2px rgba(247, 209, 205, 0.9);
+    overflow: scroll;
 }
 
 ::-webkit-input-placeholder {
@@ -84,35 +87,6 @@ input {
  transition: all .4s ease;
 }
 
-input[type=email] {
-  outline: none;
-  width: 90%;
-  padding: 15px;
-  margin: 0 auto;
-  color: #fff;
-  border: none;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  background: rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
-  -o-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
-}
- 
-input[type=email]:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
- 
-input[type=email]:focus {
-  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 1), 0 0 0 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 1), 0 0 0 5px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: inset 0 0 8px rgba(0, 0, 0, 1), 0 0 0 5px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 1), 0 0 0 5px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.6);
-}
- 
 input[type=submit] {
   position: absolute;
   margin-left: -105px;
@@ -179,7 +153,6 @@ p a:hover {
 
 @import url(animate.css);
 .container {
- position: fixed;
  /*width: 500px;*/
  /*height: 300px;*/
  top: 10%;
